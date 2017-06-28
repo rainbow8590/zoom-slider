@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		img{
+			border: none;
+			display: block;
+			float: left;
+		}
+		#wrap{
+			width: 800px;
+			height: 400px;
+			background: #000;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+		}
+		#wrap img.smallImg{
+			float: left;
+			display: block;
+			opacity: 0.5;
+			filter: alpha(opacity=50);
+		}
+		#wrap img.cur{
+			opacity: 0.9;
+			filter: alpha(opacity=90);
+		}
+		#wrap img.current{
+			opacity: 0.9;
+			filter: alpha(opacity=90);
+		}
+
+
+	</style>
+</head>
+<body>
+	<div id="wrap">
+	</div> 
+	<script src="jump.js"></script>
+	<script>
+
+	jump({
+		wrapId:'wrap',
+		itemId:'item',
+		zoomId:'zoom',
+		width: 1000,
+		height: 420,
+		imgsArr:['images/1.jpg','images/2.jpg','images/3.jpg','images/4.jpg','images/5.jpg','images/6.jpg'],
+		bigImgsArr:['images/-1.jpg','images/-2.jpg','images/-3.jpg','images/-4.jpg','images/-5.jpg','images/-6.jpg']
+	})
+
+
+	</script>
+</body>
+</html>
